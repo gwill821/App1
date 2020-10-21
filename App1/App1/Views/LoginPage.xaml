@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#FCAE1E</Color>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout Padding="10,150,10,0" VerticalOptions="Center">
+                <Label HorizontalOptions="Center" Text="Welcome Back" FontSize="40" FontAttributes="Bold"/>
+                <Label HorizontalOptions="Center" Text="Grady" FontSize="32" Padding="0,10,0,10" FontAttributes="Bold"/>
+                <Image Source="campus_front.png" VerticalOptions="Center" HeightRequest="175" HorizontalOptions="Center"/>
+                <Button VerticalOptions="Center" Text="Enter" Padding="0,15,0,0" Command="{Binding LoginCommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
